@@ -1,0 +1,31 @@
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+
+# Eclipse working directories
+bin/
+
+# Eclipse configuration and metadata
+.metadata/
+*.log
+
+# Local server configurations (e.g., Tomcat)
+Servers/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+*.iml
+*.ipr
+*.iws
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
