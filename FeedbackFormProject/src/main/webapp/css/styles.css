@@ -1,0 +1,254 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Layout styles */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left panel */
+.left-panel {
+    flex: 1;
+    position: relative;
+    background-color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.tagline {
+    position: relative;
+    text-align: center;
+}
+
+.tagline h1, .tagline h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Right panel */
+.right-panel {
+    flex: 1;
+    background-color: #2d2d44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form container */
+.form-container {
+    width: 80%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff; /* Added white color to match your theme */
+}
+
+p {
+    font-size: 0.9rem;
+    color: #b3b3b3; /* Aligned with your existing paragraph text color */
+}
+
+p a {
+    color: #7f5af0; /* Aligned with link color in your design */
+    text-decoration: none;
+}
+
+/* Form group (spacing and layout) */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Adjusted to stack inputs vertically */
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Adjusted to match the theme's border color */
+    border-radius: 5px;
+    background: #2d2d44; /* Consistent with background color */
+    color: #fff; /* White text color for input */
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #7f5af0; /* Matches your theme's button color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d3db3; /* Darker shade of the button color for hover */
+}
+
+/* Checkbox styling */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7f5af0;
+    border-radius: 4px;
+    background-color: #2d2d44;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px; /* Space between checkbox and label */
+    vertical-align: middle; /* Ensures the checkbox is aligned with the label text */
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; /* Aligns the label text with the checkbox */
+}
+
+/* Additional form styling */
+textarea {
+    height: 150px;
+    resize: none; /* Prevent resizing */
+}
+
+button[type="submit"] {
+    background-color: #7f5af0; /* Primary button color */
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #5d3db3; /* Darken on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Added spacing between form elements */
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    background: #2d2d44;
+    color: #fff;
+}
+
+form textarea {
+    padding: 10px;
+    background: #2d2d44;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 14px;
+}
+
+/* Checkbox layout */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7f5af0;
+    border-radius: 4px;
+    background-color: #2d2d44;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px; /* Space between checkbox and label */
+    vertical-align: middle; /* Ensures the checkbox is aligned with the label text */
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; /* Aligns the label text with the checkbox */
+}
