@@ -29,3 +29,9 @@ Thumbs.db
 *.tmp
 *.bak
 *.swp
+
+# Ignore all .properties files
+*.properties
+
+# Ignore employee.properties for the JDBCDemo project only
+JDBCDemo/src/employee.properties
