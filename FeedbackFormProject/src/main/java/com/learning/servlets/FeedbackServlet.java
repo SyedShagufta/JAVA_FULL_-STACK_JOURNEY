@@ -10,10 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/feedback")
 public class FeedbackServlet extends HttpServlet{
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -46,6 +42,4 @@ public class FeedbackServlet extends HttpServlet{
 		
 	}
 	
-	
-
 }
